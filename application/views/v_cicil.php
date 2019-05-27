@@ -263,10 +263,10 @@
 			<div class="table-title">
 				<div class="row">
 					<div class="col-sm-6">
-						<h2>Manage <b>Employees</b></h2>
+						<h2>Manage <b>Motor</b></h2>
 					</div>
 					<div class="col-sm-6">
-						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"> <span>Add New Employee</span></a>
+						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"> <span>Add New Motor</span></a>
 						<a href="<?php echo site_url('c_motor/index') ?>" class="btn btn-success" data-toggle="modal"> <span>Home</span></a>
 					</div>
 				</div>

@@ -277,39 +277,36 @@
 						<th>
 							No.
 						</th>
-						<th>Nim</th>
-						<th>Name</th>
-						<th>Motor</th>
+						<th>Tipe Motor</th>
+						<th>Harga Motor</th>
+						<th>Tenor</th>
+						<th>Uang Muka</th>
+						<th>Cicilan Pokok</th>
+						<th>Cicilan Bunga</th>
+						<th>Cicilan Total</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<?php
 						$i=1;
-						// foreach ($user as $key) {
+						foreach ($motor as $key) {
 							?>
 							<td>
 								<?php echo $i; ?>
 							</td>
-							<td><?php echo $user->data->NIM; ?></td>
-							<td><?php echo $user->data->Nama; ?></td>
-							<td>
-								<a href="<?php echo site_url('c_motor/tampil_motor') ?>" >Lihat Motor</a>
-							</td>
-							<td>
-								<a href="<?php echo site_url('c_motor/tampil_cicil') ?>" >Lihat Cicilan</a>
-							</td>
-							<td>
-								<a href="<?php echo site_url('c_motor/tampil_dp') ?>" >Lihat Uang Muka</a>
-							</td>
-							<td>
-								<a href="<?php echo site_url('c_motor/tampil_penjualan') ?>" >Lihat Penjualan</a>
-							</td>
+							<td><?php echo $key->tipe_motor; ?></td>
+							<td><?php echo $key->harga_motor; ?></td>
+							<td><?php echo $key->tenor; ?></td>
+							<td><?php echo $key->uang_muka; ?></td>
+							<td><?php echo $key->cicilan_pokok; ?></td>
+							<td><?php echo $key->cicilan_bunga; ?></td>
+							<td><?php echo $key->cicilan_total; ?></td>
 						</tr>
 						<?php
 						$i++;
 
-					// }
+				 }
 					?>
 				</tbody>
 			</table>
